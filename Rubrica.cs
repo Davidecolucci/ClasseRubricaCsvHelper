@@ -131,7 +131,6 @@ public class Rubrica
         }
     }
 
-
     public static void ImportaContatti() 
     {
         Console.Write("Come si chiama il file da importare? ");
@@ -208,24 +207,6 @@ public class Rubrica
         Console.WriteLine("Contatti esportati.");
     }
 
-
-    /*
-    public static void SalvaContatti()
-    {
-        var righe = new List<string>(); // Crea una lista di stringhe
-
-        foreach (var contatto in contatti) // Scorre ogni contatto
-        {
-            var utente = contatto.Value;
-            string? riga = $"{utente.Nome},{utente.Cognome},{utente.Email},{utente.NumeroTelefono}";
-            righe.Add(riga);
-        }
-
-        File.WriteAllLines(FilePath, righe); // Scrive le righe nel file CSV
-        Console.WriteLine("Contatti aggiornati nel file rubrica.csv.");
-    }
-    */
-
     public static void SalvaContatti()
     {
         try
@@ -242,7 +223,6 @@ public class Rubrica
             Console.WriteLine($"Errore durante il salvataggio dei contatti: {ex.Message}");
         }
     }
-
 
     public static void CaricaContatti()
     {
@@ -271,7 +251,4 @@ public class Rubrica
             Console.WriteLine($"Errore durante il caricamento dei contatti: {ex.Message}");
         }
     }
-
-
-
 }

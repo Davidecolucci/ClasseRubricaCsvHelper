@@ -21,9 +21,9 @@ public class Utente
     [Index(3)]
     public string NumeroTelefono { get; set; }
 
-    public Utente() { } //costruttore vuoto, utile x creare gli oggetti prima di riempirli con il contenuto preso alla lettura del file
+    public Utente() { } 
 
-    public Utente(string nome, string cognome, string email, string numeroTelefono) //costruttore
+    public Utente(string nome, string cognome, string email, string numeroTelefono) 
     {
         Nome = nome;
         Cognome = cognome;
